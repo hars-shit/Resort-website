@@ -1,3 +1,6 @@
+import "./style.css"
+import { CiUser } from "react-icons/ci";
+import { SlCalender } from "react-icons/sl";
 
 const About = () => {
   return (
@@ -9,6 +12,7 @@ const About = () => {
         </div>
         <div className="about__card">
           <span><i className="ri-user-line"></i></span>
+          <CiUser className="CiUser"/>
           <h4>Strong Team</h4>
           <p>
             Unlocking Hospitality Excellence And Ensures Your Perfect Stay
@@ -19,6 +23,7 @@ const About = () => {
         </div>
         <div className="about__card">
           <span><i className="ri-calendar-check-line"></i></span>
+          <SlCalender className="CiUser sl"/>
           <h4>Luxury Room</h4>
           <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
         </div>

@@ -1,3 +1,8 @@
+import React from "react"
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosGlasses } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
+
 
 const Footer = () => {
   return (
@@ -44,6 +49,7 @@ const Footer = () => {
           <div className="footer__links">
             <li>
               <span><i className="ri-phone-fill"></i></span>
+              <FaPhoneAlt className="fas"/>
               <div>
                 <h5>Phone Number</h5>
                 <p>+91 9876543210</p>
@@ -51,6 +57,7 @@ const Footer = () => {
             </li>
             <li>
               <span><i className="ri-record-mail-line"></i></span>
+              <IoIosGlasses className="fas"/>
               <div>
                 <h5>Email</h5>
                 <p>info@hotelmiranda.com</p>
@@ -58,6 +65,7 @@ const Footer = () => {
             </li>
             <li>
               <span><i className="ri-map-pin-2-fill"></i></span>
+              <IoLocation className="fas"/>
               <div>
                 <h5>Location</h5>
                 <p>First St. NYC</p>

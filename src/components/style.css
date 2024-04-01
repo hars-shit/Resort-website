@@ -1,0 +1,33 @@
+.CiUser{
+    color: gold;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 9000;
+    font-size: 54px;
+}
+
+.sl{
+    margin-bottom: 30px;
+}
+
+.fac{
+    color: #f6ac0f;
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.fas{
+    color: #f6ac0f;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.fi{
+    color: #f6ac0f;
+    font-size: 44px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}

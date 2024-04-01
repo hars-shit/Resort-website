@@ -1,4 +1,7 @@
-
+import { FaRegFilePdf } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa6";
+import { GrAppsRounded } from "react-icons/gr";
+import { FaRegLightbulb } from "react-icons/fa";
 
 const FoodMenu = () => {
   return (
@@ -83,21 +86,25 @@ const FoodMenu = () => {
       <ul className="menu__banner">
         <li>
           <span><i className="ri-file-text-line"></i></span>
+          <FaRegFilePdf className="fi"/>
           <h4>84k</h4>
           <p>Projects are Completed</p>
         </li>
         <li>
           <span><i className="ri-user-line"></i></span>
+          <FaRegUser className="fi"/>
           <h4>10M</h4>
           <p>Active Around World</p>
         </li>
         <li>
           <span><i className="ri-function-line"></i></span>
+          <GrAppsRounded className="fi"/>
           <h4>02k</h4>
           <p>Categories Served</p>
         </li>
         <li>
           <span><i className="ri-lightbulb-flash-line"></i></span>
+          <FaRegLightbulb className="fi"/>
           <h4>100M</h4>
           <p>Ideas Raised Funds</p>
         </li>
