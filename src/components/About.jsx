@@ -8,7 +8,7 @@ const About = () => {
     <div className="section__container about__container">
       <div className="about__grid">
         <div className="about__image">
-          <img src="assets/about-1.jpg" alt="about" />
+          <img src="/src/img/a.jpg" alt="about 1" />
         </div>
         <div className="about__card">
           <span><i className="ri-user-line"></i></span>
@@ -19,7 +19,7 @@ const About = () => {
           </p>
         </div>
         <div className="about__image">
-          <img src="assets/about-2.jpg" alt="about" />
+          <img src="/src/img/camp.jpg" alt="about 2" />
         </div>
         <div className="about__card">
           <span><i className="ri-calendar-check-line"></i></span>

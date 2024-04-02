@@ -166,7 +166,7 @@ nav {
       rgba(15, 26, 44, 0.5),
       rgba(15, 26, 44, 0.5)
     ),
-    url("assets/header.jpg");
+    url("./img/main.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -359,7 +359,7 @@ nav {
   background-color: var(--primary-color);
 }
 
-.intro::before {
+/* .intro::before {
   position: absolute;
   content: "";
   right: 0;
@@ -367,7 +367,7 @@ nav {
   width: calc(100vw / 4);
   background-color: var(--secondary-color);
   z-index: -1;
-}
+} */
 
 .intro__container {
   display: grid;
@@ -801,4 +801,8 @@ nav {
   .news__grid {
     gap: 2rem;
   }
+}
+
+.fac{
+  margin-left: 2rem;
 }

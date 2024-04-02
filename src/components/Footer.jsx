@@ -1,4 +1,3 @@
-import React from "react"
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosGlasses } from "react-icons/io";
 import { IoLocation } from "react-icons/io5";

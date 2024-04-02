@@ -15,7 +15,7 @@ const Intro = () => {
           <button className="btn">Book Now</button>
         </div>
         <div className="intro__video">
-          <video src="assets/luxury.mp4" autoPlay muted loop></video>
+          <video src="/src/img/WhatsApp Video 2024-04-02 at 9.24.17 AM.mp4" autoPlay muted loop></video>
         </div>
       </div>
     </section>

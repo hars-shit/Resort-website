@@ -12,7 +12,6 @@ const Facilities = () => {
       <h2 className="section__header">Core Features</h2>
       <div className="feature__grid">
         <div className="feature__card">
-          <span><i className="ri-thumb-up-line"></i></span>
           <AiOutlineLike className="fac"/>
           <h4>Have High Rating</h4>
           <p>
@@ -21,7 +20,6 @@ const Facilities = () => {
           </p>
         </div>
         <div className="feature__card">
-          <span><i className="ri-time-line"></i></span>
           <LuClock3 className="fac"/>
           <h4>Quite Hours</h4>
           <p>
@@ -30,7 +28,6 @@ const Facilities = () => {
           </p>
         </div>
         <div className="feature__card">
-          <span><i className="ri-map-pin-line"></i></span>
           <IoLocationOutline className="fac"/>
           <h4>Best Location</h4>
           <p>
@@ -39,7 +36,6 @@ const Facilities = () => {
           </p>
         </div>
         <div className="feature__card">
-          <span><i className="ri-close-circle-line"></i></span>
           <IoMdCloseCircleOutline className="fac"/>
           <h4>Free Cancellation</h4>
           <p>
@@ -48,7 +44,6 @@ const Facilities = () => {
           </p>
         </div>
         <div className="feature__card">
-          <span><i className="ri-wallet-line"></i></span>
           <LuWallet className="fac"/>
           <h4>Payment Options</h4>
           <p>
@@ -57,7 +52,6 @@ const Facilities = () => {
           </p>
         </div>
         <div className="feature__card">
-          <span><i className="ri-coupon-line"></i></span>
           <MdOutlineLocalOffer className="fac"/>
           <h4>Special Offers</h4>
           <p>
