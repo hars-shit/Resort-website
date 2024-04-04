@@ -1,0 +1,66 @@
+.containerV{
+    color: #f8fafc;
+    text-align: center;
+    padding: 15px;
+    font-size: 32px;
+    font-weight: 600 !important;
+    font-weight: normal;
+    justify-content: flex-start !important;
+    margin-top: 3rem;
+    min-height: 50vh !important;
+}
+
+.containerV .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content:center;
+    padding: 10px;
+}
+
+.containerV .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.containerV .video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.containerV .video-container .video:hover video{
+    transform: scale(1.1);
+}
+
+.containerV .popup-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+}
+
+.containerV .popup-video video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+.close{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

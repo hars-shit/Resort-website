@@ -1,5 +1,5 @@
 import Main from "../Pages/Main"
-
+import {Link} from 'react-router-dom'
 const Header = () => {
   return (
     <>
@@ -8,18 +8,17 @@ const Header = () => {
       <div className="nav__header">
         <div className="logo nav__logo">
           <div>H</div>
-          <span>HOTEL<br />MIRANDA</span>
+          <span>OAKWOOD<br />RESORT</span>
         </div>
         <div className="nav__menu__btn" id="menu-btn">
-          <i className="ri-menu-line"></i>
         </div>
       </div>
       <ul className="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><Link to="/">Home</Link></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#room">Room</a></li>
+        <li><a href="#room">Camps</a></li>
         <li><a href="#feature">Feature</a></li>
-        <li><a href="#menu">Menu</a></li>
+        <li><a href="#menu">Activities</a></li>
         <li><a href="#news">News</a></li>
       </ul>
     </div>

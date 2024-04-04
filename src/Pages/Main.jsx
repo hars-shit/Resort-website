@@ -3,6 +3,7 @@ import Date from "../components/Date/Date"
 import dayjs from "dayjs"
 import Loader from "../components/Loader/Loader"
 import Alert from "../components/Alert/Alert"
+import { FaArrowCircleRight } from "react-icons/fa";
 
 
 const Main = () => {
@@ -29,9 +30,9 @@ const Main = () => {
    {loading && <Alert open={open} setOpen={setOpen}/>}
     <header className="header" id="home">
       <div className="section__container header__container">
-        <p className="section__subheader">ABOUT US</p>
-        <h1>The Perfect<br />Base For You</h1>
-        <button className="btn">Take A Tour</button>
+        {/* <p className="section__subheader">The</p> */}
+        <h1>Escape to <br />Uttarakhand's Charm</h1>
+        <button className="btn">Visit Galary</button>
       </div>
     </header>
 
@@ -50,7 +51,11 @@ const Main = () => {
             <label htmlFor="guests">Guests</label>
             <input type="text" placeholder="No Of Guests" inputMode={"numeric"} value={guests} onChange={(e)=>setGuests(e.target.value)}/>
           </div>
-          <button className="btn" onClick={handleClick}>Check Availability</button>
+         
+          <button className="btn border" onClick={handleClick}>Check Availability
+         <FaArrowCircleRight style={{fontSize:'1.5rem'}}/>
+          </button>
+         
         </form>
       </div>
     </section>
