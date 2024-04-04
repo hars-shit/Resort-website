@@ -5,6 +5,7 @@ import FoodMenu from "../components/FoodMenu"
 import Intro from "../components/Intro"
 import Room from "../components/Room"
 import Contact from "./Contact/Contact"
+import Review from "./Review/Review"
 
 
 const All = () => {
@@ -16,7 +17,8 @@ const All = () => {
    {/* <Facilities />  */}
    <FoodMenu />
    <Contact />
-   <Blog />
+   {/* <Review /> */}
+   {/* <Blog /> */}
    </>
   )
 }

@@ -4,9 +4,12 @@ import dayjs from "dayjs"
 import Loader from "../components/Loader/Loader"
 import Alert from "../components/Alert/Alert"
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"
 
 
 const Main = () => {
+  const navigate=useNavigate()
+
  const [loading,setLoading]=useState(false) 
   const [open,setOpen]=useState(false)
   const [guests,setGuests]=useState(0)
@@ -32,7 +35,7 @@ const Main = () => {
       <div className="section__container header__container">
         {/* <p className="section__subheader">The</p> */}
         <h1>Escape to <br />Uttarakhand's Charm</h1>
-        <button className="btn">Visit Galary</button>
+        <button className="btn" onClick={()=>navigate('/galary')}>Visit Galary</button>
       </div>
     </header>
 

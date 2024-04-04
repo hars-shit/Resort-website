@@ -5,6 +5,7 @@ import c from '../../img/f2.jpg'
 import d from '../../img/f4.jpg'
 import { useState } from 'react'
 import VideoGallery from './VideoGalary'
+import { Link } from 'react-router-dom'
 const Galary = () => {
     const [all,setAll]=useState(true)
     const [camping,setCamping]=useState(false)
@@ -60,28 +61,28 @@ const Galary = () => {
 			<div className="item design">
 				<img src={a} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+					<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
 				<img src={a}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
 				<img src={a}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={a} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
@@ -111,42 +112,42 @@ const Galary = () => {
 			<div className="item design">
 				<img src={b} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
 				<img src={b}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
 				<img src={b}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={b} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={b} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item logo">
 				<img src={b} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 	
@@ -163,42 +164,42 @@ const Galary = () => {
 			<div className="item design">
 				<img src={c} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
 				<img src={c}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
 				<img src={c}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={c} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={c} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item logo">
 				<img src={c} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 	
@@ -215,42 +216,42 @@ const Galary = () => {
 			<div className="item design">
 				<img src={d} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
 				<img src={d}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
 				<img src={d}/>
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={d} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
 				<img src={d} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item logo">
 				<img src={d} />
 				<div className="overlay">
-					<a href="#">VIEW MORE</a>
+				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 	

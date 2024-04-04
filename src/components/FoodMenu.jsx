@@ -2,7 +2,9 @@ import { FaRegFilePdf } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { GrAppsRounded } from "react-icons/gr";
 import { FaRegLightbulb } from "react-icons/fa";
-
+import a from '../img/slide2.jpg'
+import b from '../img/slide1.jpeg'
+import c from '../img/f3.jpg'
 const FoodMenu = () => {
   return (
     <section className="menu" id="menu">
@@ -79,9 +81,9 @@ const FoodMenu = () => {
         </li>
       </ul>
       <div className="menu__images">
-        <img src="assets/menu-7.jpg" alt="menu" />
-        <img src="assets/menu-8.jpg" alt="menu" />
-        <img src="assets/menu-9.jpg" alt="menu" />
+        <img src={a} alt="menu" />
+        <img src={b} alt="menu" />
+        <img src={c} alt="menu" />
       </div>
       <ul className="menu__banner">
         <li>

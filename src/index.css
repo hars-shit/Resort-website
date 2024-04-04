@@ -185,6 +185,16 @@ nav {
   font-family: var(--header-font);
   color: var(--white);
 }
+@media (width < 480px) {
+  .header__container h1 {
+    
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 5rem;
+    font-family: var(--header-font);
+    color: var(--white);
+  }
+}
 
 .booking {
   background-color: var(--primary-color);

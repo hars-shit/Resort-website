@@ -2,6 +2,8 @@ import "./style.css";
 import { CiUser } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 import { useNavigate } from "react-router-dom";
+import a from '../img/a.jpg'
+import b from '../img/camp.jpg'
 
 const About = () => {
   const navigate=useNavigate()
@@ -10,7 +12,7 @@ const About = () => {
       <div className="section__container about__container">
         <div className="about__grid">
           <div className="about__image">
-            <img src="/src/img/a.jpg" alt="about 1" />
+            <img src={a} alt="about 1" />
           </div>
           <div className="about__card">
             <span>
@@ -23,15 +25,15 @@ const About = () => {
             </p>
           </div>
           <div className="about__image">
-            <img src="/src/img/camp.jpg" alt="about 2" />
+            <img src={b} alt="about 2" />
           </div>
           <div className="about__card">
             <span>
               <i className="ri-calendar-check-line"></i>
             </span>
             <SlCalender className="CiUser sl" />
-            <h4>Luxury Room</h4>
-            <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+            <h4>Dome Tent</h4>
+            <p>Nestled among oak trees and vibrant wildlife</p>
           </div>
         </div>
         <div className="about__content">
