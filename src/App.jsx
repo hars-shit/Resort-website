@@ -6,6 +6,7 @@ import All from './Pages/All'
 import Contact from './Pages/Contact/Contact'
 import Galary from './Pages/Galary/Galary'
 import VideoGallery from './Pages/Galary/VideoGalary'
+import Review from './Pages/Review/Review'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
      <Route path="/contact" element={<Contact />}/>
      <Route path='/galary' element={<Galary />}/>
      <Route path='/video' element={<VideoGallery />}/>
+     <Route path='/review' element={<Review />}/>
     </Routes>
     <Footer />
    </>
