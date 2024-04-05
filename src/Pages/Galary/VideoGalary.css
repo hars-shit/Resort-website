@@ -47,20 +47,48 @@
     background: rgba(0, 0, 0, 0.8);
     height: 100%;
     width: 100%;
+    /* border: 2px solid red; */
 }
 
-.containerV .popup-video video{
+.video-video{
+    /* border: 2px solid red; */
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerV .popup-video .video-video video{
+    height: 90%;
+    position: relative;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 750px;
     border-radius: 5px;
     border: 5px solid white;
-    object-fit: cover;
+    object-fit: cover; */
 }
 .close{
     position: absolute;
     top: 50%;
     left: 50%;
+}
+.AiFillCloseSquare{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-59%, -50%);
+}
+
+@media (max-width: 768px){
+    .containerV .popup-video .video-video{
+        width: 95%;
+    }
 }

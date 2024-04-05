@@ -1,11 +1,11 @@
-import { FaRegFilePdf } from "react-icons/fa";
-import { FaRegUser } from "react-icons/fa6";
-import { GrAppsRounded } from "react-icons/gr";
-import { FaRegLightbulb } from "react-icons/fa";
+import { MdOutlineExplore } from "react-icons/md";
+import { GiTreeBranch } from "react-icons/gi";
+import { FaRegSnowflake } from "react-icons/fa";
 import a from '../img/slide2.jpg'
 import b from '../img/slide1.jpeg'
 import c from '../img/f3.jpg'
-import Review from "../Pages/Review/Review";
+import d from '../img/f1.jpg'
+import { IoLocation } from "react-icons/io5";
 const FoodMenu = () => {
   return (
     <section className="menu" id="menu">
@@ -27,7 +27,7 @@ const FoodMenu = () => {
           </div>
         </li>
         <li>
-          <img src="/src/img/f1.jpg" alt="menu" />
+          <img src={d} alt="menu" />
           <div className="menu__details">
             <h4>Camping</h4>
             <p>
@@ -54,7 +54,7 @@ const FoodMenu = () => {
           </div>
         </li>
         <li>
-          <img src="/src/img/slide2.jpg" alt="menu" />
+          <img src={a} alt="menu" />
           <div className="menu__details">
             <h4>Camp fire</h4>
             <p>
@@ -78,31 +78,29 @@ const FoodMenu = () => {
         <img src={c} alt="menu" />
       </div>
       <ul className="menu__banner">
-        {/* <li>
-          <span><i className="ri-file-text-line"></i></span>
-          <FaRegFilePdf className="fi"/>
-          <h4>84k</h4>
-          <p>Projects are Completed</p>
+        <li>
+          <IoLocation className="fi"/>
+          <h4>Situated At Best Location</h4>
+          {/* <p>12Km From Gopeshwar</p> */}
         </li>
         <li>
           <span><i className="ri-user-line"></i></span>
-          <FaRegUser className="fi"/>
-          <h4>10M</h4>
-          <p>Active Around World</p>
+          <GiTreeBranch className="fi"/>
+          <h4>Oak Trees and Serenity</h4>
+   
         </li>
         <li>
           <span><i className="ri-function-line"></i></span>
-          <GrAppsRounded className="fi"/>
-          <h4>02k</h4>
-          <p>Categories Served</p>
+          <MdOutlineExplore className="fi"/>
+          <h4>Perfect Destination</h4>
+         
         </li>
         <li>
           <span><i className="ri-lightbulb-flash-line"></i></span>
-          <FaRegLightbulb className="fi"/>
-          <h4>100M</h4>
-          <p>Ideas Raised Funds</p>
-        </li> */}
-        <Review />
+          <FaRegSnowflake className="fi"/>
+          <h4>Snow-capped beauty</h4>
+        </li>
+       
       </ul>
     </div>
   </section>

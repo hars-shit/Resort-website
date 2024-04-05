@@ -1,4 +1,6 @@
-
+import a from '../img/f1.jpg'
+import b from '../img/f2.jpg'
+import c from '../img/camp.jpg'
 const Room = () => {
   return (
     <section className="room__container" id="room">
@@ -7,7 +9,7 @@ const Room = () => {
     <div className="room__grid">
      
       <div className="room__card">
-        <img src="/src/img/f2.jpg" alt="room" />
+        <img src={b} alt="room" />
         <div className="room__card__details">
           <div>
             <h4>Family Suite</h4>
@@ -17,7 +19,7 @@ const Room = () => {
         </div>
       </div>
       <div className="room__card">
-        <img src="/src/img/f1.jpg" alt="room" />
+        <img src={a} alt="room" />
         <div className="room__card__details">
           <div>
             <h4>Deluxe Suite</h4>
@@ -27,7 +29,7 @@ const Room = () => {
         </div>
       </div>
       <div className="room__card">
-        <img src="/src/img/camp.jpg" alt="room" />
+        <img src={c} alt="room" />
         <div className="room__card__details">
           <div>
             <h4>Luxury Penthouse</h4>

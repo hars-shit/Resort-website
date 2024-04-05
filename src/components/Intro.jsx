@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import a from '../img/WhatsApp Video 2024-04-02 at 9.24.16 AM.mp4'
 const Intro = () => {
   const navigate=useNavigate()
   return (
@@ -18,7 +18,7 @@ const Intro = () => {
         </div>
         <div className="intro__video">
           <video
-            src="/src/img/WhatsApp Video 2024-04-02 at 9.24.17 AM.mp4"
+            src={a}
             autoPlay
             muted
             loop

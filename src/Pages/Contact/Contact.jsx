@@ -4,19 +4,18 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 import { useLocation } from 'react-router-dom';
-
+import emailjs from '@emailjs/browser'
 const Contact = () => {
-    // service id = service_fsjelbl
-
-
+    
+    
     const [data,setData]=useState({
         name:"",
         email:"",
         number:"",
         text:""
     })
-  
-
+    
+    
     const handleChange=(e)=>{
         const {name,value}=e.target;
         setData(pre=>({
@@ -24,8 +23,31 @@ const Contact = () => {
             [name]:value
         }))
     }
+    // service id = service_fsjelbl
+    // public ZrX4X_IoPovPpwQo7
+    // template_9ov3i7a
     const handleSubmit=(e)=>{
         e.preventDefault();
+        const serviceId = 'service_fsjelbl';
+        const templateId='template_9ov3i7a';
+        const publicKey='ZrX4X_IoPovPpwQo7';
+
+        const tempObj={
+            from_name:data.name,
+            from_email:data.email,
+            from_number:data.number,
+            message:data.text
+
+        }
+    emailjs.send(serviceId,templateId,tempObj,publicKey)
+    .then((response)=>{
+        console.log("email sent Successfully",response);
+        setData('')
+    })
+    .catch((error)=>{
+        console.error("Error sending failed",error)
+    })
+        
         console.log(data)
     }
 
