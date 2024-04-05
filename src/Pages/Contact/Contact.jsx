@@ -1,11 +1,34 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './Contact.css'
 import { FaPhoneAlt } from "react-icons/fa";
-import { IoIosGlasses } from "react-icons/io";
+import { IoMail } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 import { useLocation } from 'react-router-dom';
 
 const Contact = () => {
+    // service id = service_fsjelbl
+
+
+    const [data,setData]=useState({
+        name:"",
+        email:"",
+        number:"",
+        text:""
+    })
+  
+
+    const handleChange=(e)=>{
+        const {name,value}=e.target;
+        setData(pre=>({
+            ...pre,
+            [name]:value
+        }))
+    }
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        console.log(data)
+    }
+
     const location = useLocation()
     useEffect(()=>{
         console.log("as",location.pathname)
@@ -31,7 +54,7 @@ const Contact = () => {
  
             <div className="contactTitle">
                 <h2>Get In Touch</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                <p>For inquiries or bookings, feel free to reach out to us .Will connect with you as soon as possible.</p>
             </div>
 
             <div className="contactInfo">
@@ -42,17 +65,17 @@ const Contact = () => {
                     </div>
                     <div className="details">
                         <span>Phone</span>
-                        <span>+00 110 111 00</span>
+                        <a style={{fontSize:'14px'}} href="tel:+919520593613"><span>+91 9520593613</span></a>
                     </div>
                 </div>
 
                 <div className="iconGroup">
                     <div className="icon">
-                        <IoIosGlasses />
+                        <IoMail />
                     </div>
                     <div className="details">
                         <span>Email</span>
-                        <span>name.tutorial@gmail.com</span>
+                        <a style={{fontSize:'14px'}} href="mailto:up@gmail.com"><span>up@gmail.com</span></a>
                     </div>
                 </div>
 
@@ -61,8 +84,8 @@ const Contact = () => {
                       <IoLocation />
                     </div>
                     <div className="details">
-                        <span>Location</span>
-                        <span>X Street, Y Road, San Fransisco</span>
+                        <span >Location</span>
+                        <a style={{fontSize:'14px'}} href="https://www.google.com/maps/place/Gopeshwar,+Uttarakhand" target="_blank" rel="noopener noreferrer"><span>Gopeshwar,Uttarakhand</span></a>
                     </div>
                 </div>
 
@@ -77,27 +100,27 @@ const Contact = () => {
             <form className="messageForm">
                 
                 <div className="inputGroup halfWidth">
-                    <input type="text" name="" required="required" />
+                    <input type="text" name="name" value={data.name} required="required" onChange={handleChange}/>
                     <label>Your Name</label>
                 </div>
 
                 <div className="inputGroup halfWidth">
-                    <input type="email" name="" required="required" />
+                    <input type="email" name="email" value={data.email} required="required" onChange={handleChange}/>
                     <label>Email</label>
                 </div>
 
                 <div className="inputGroup fullWidth">
-                    <input type="text" name="" required="required" />
-                    <label>Subject</label>
+                    <input type="text" name="number" value={data.number} inputMode={"numeric"} required="required" onChange={handleChange}/>
+                    <label>Phone Number</label>
                 </div>
 
                 <div className="inputGroup fullWidth">
-                    <textarea required="required"></textarea>
-                    <label>Say Something</label>
+                    <textarea name='text' value={data.text} required="required" onChange={handleChange}></textarea>
+                    <label>Ask Something</label>
                 </div>
 
                 <div className="inputGroup fullWidth">
-                    <button>Send Message</button>
+                    <button onClick={handleSubmit}>Send Message</button>
                 </div>
 
             </form>

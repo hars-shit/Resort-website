@@ -5,18 +5,15 @@ import { FaRegLightbulb } from "react-icons/fa";
 import a from '../img/slide2.jpg'
 import b from '../img/slide1.jpeg'
 import c from '../img/f3.jpg'
+import Review from "../Pages/Review/Review";
 const FoodMenu = () => {
   return (
     <section className="menu" id="menu">
     <div className="section__container menu__container">
       <div className="menu__header">
         <div>
-          <p className="section__subheader">MENU</p>
-          <h2 className="section__header">Our Food Menu</h2>
-        </div>
-        <div className="section__nav">
-          <span><i className="ri-arrow-left-line"></i></span>
-          <span><i className="ri-arrow-right-line"></i></span>
+          <p className="section__subheader">Activities</p>
+          <h2 className="section__header">Available Activities</h2>
         </div>
       </div>
       <ul className="menu__items">
@@ -25,8 +22,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Rainbow Trout Fish</h4>
             <p>
-              It is a culinary innovation that puts a unique spin on the
-              beloved breakfast combination.
+            The pond at Oakwood Resort is home to majestic rainbow trout, adding a splash of vibrant color to its serene waters.
             </p>
           </div>
         </li>
@@ -35,7 +31,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Camping</h4>
             <p>
-              A classic choice for your daily dose of comfort and calmness.
+            Experience the thrill of camping amidst the scenic beauty of Oakwood Resort's lush surroundings, where adventure meets tranquility.
             </p>
           </div>
         </li>
@@ -44,8 +40,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Orchid</h4>
             <p>
-              Our Chia Oatmeal is a wholesome nutrient-packed breakfast
-              delight.
+            Orchids adorn the landscape of Oakwood Resort, adding a touch of elegance and beauty to its surroundings.
             </p>
           </div>
         </li>
@@ -54,8 +49,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Barbeque</h4>
             <p>
-              Our Fruit Parfait is a delightful culinary masterpiece of
-              freshness and flavor.
+            Indulge in the ultimate culinary experience with a sizzling barbecue at Oakwood Resort, where flavors come to life under the open sky.
             </p>
           </div>
         </li>
@@ -64,8 +58,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Camp fire</h4>
             <p>
-              Our Marmalade Selection is a delectable medley of vibrant,
-              handcrafted citrus preserves.
+            Gather around the mesmerizing campfire at Oakwood Resort, where stories are shared and memories are made beneath the starlit sky.
             </p>
           </div>
         </li>
@@ -74,8 +67,7 @@ const FoodMenu = () => {
           <div className="menu__details">
             <h4>Treeking</h4>
             <p>
-              Our cheese plate is a masterpiece that celebrates rich and
-              diverse world of cheeses.
+            Embark on an unforgettable trekking adventure through the pristine wilderness surrounding Oakwood Resort, where every step unveils the wonders of nature.
             </p>
           </div>
         </li>
@@ -86,7 +78,7 @@ const FoodMenu = () => {
         <img src={c} alt="menu" />
       </div>
       <ul className="menu__banner">
-        <li>
+        {/* <li>
           <span><i className="ri-file-text-line"></i></span>
           <FaRegFilePdf className="fi"/>
           <h4>84k</h4>
@@ -109,7 +101,8 @@ const FoodMenu = () => {
           <FaRegLightbulb className="fi"/>
           <h4>100M</h4>
           <p>Ideas Raised Funds</p>
-        </li>
+        </li> */}
+        <Review />
       </ul>
     </div>
   </section>

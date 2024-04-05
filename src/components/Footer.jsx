@@ -1,7 +1,8 @@
 import { FaPhoneAlt } from "react-icons/fa";
-import { IoIosGlasses } from "react-icons/io";
+import { IoMail } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 import "./style.css"
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="footer__col">
           <div className="logo footer__logo">
             <div>H</div>
-            <span>HOTEL<br />MIRANDA</span>
+            <span>OAKWOOD<br />RESORT</span>
           </div>
 
           <div className="frame">
@@ -29,13 +30,13 @@ const Footer = () => {
         </div>
         <div className="footer__col">
           <h4>Services</h4>
-          <div className="footer__links">
-            <li><a href="#">Online Booking</a></li>
-            <li><a href="#">Room Customization</a></li>
-            <li><a href="#">Virtual Tours</a></li>
-            <li><a href="#">Special Offers</a></li>
-            <li><a href="#">Concierge Services</a></li>
-            <li><a href="#">Customer Support</a></li>
+          <div className="footer__links" >
+          <li style={{marginBottom:'1.25rem'}}><Link to="/">Home</Link></li>
+        <li style={{marginBottom:'1.25rem'}}><a href="#about">About</a></li>
+        <li style={{marginBottom:'1.25rem'}}><Link to="/galary">Galary</Link></li>
+        <li style={{marginBottom:'1.25rem'}}><a href="#room">Camps</a></li>
+        <li style={{marginBottom:'1.25rem'}}><Link to="/contact">Contact</Link></li>
+        <li style={{marginBottom:'1.25rem'}}><a href="#menu">Activities</a></li>
           </div>
         </div>
         <div className="footer__col">
@@ -46,15 +47,15 @@ const Footer = () => {
               <FaPhoneAlt className="fas"/>
               <div>
                 <h5>Phone Number</h5>
-                <p>+91 9876543210</p>
+                <p>+91 9520593613</p>
               </div>
             </li>
             <li>
               <span><i className="ri-record-mail-line"></i></span>
-              <IoIosGlasses className="fas"/>
+              <IoMail className="fas"/>
               <div>
                 <h5>Email</h5>
-                <p>info@hotelmiranda.com</p>
+                <p>up@gmail.com</p>
               </div>
             </li>
             <li>
@@ -62,14 +63,14 @@ const Footer = () => {
               <IoLocation className="fas"/>
               <div>
                 <h5>Location</h5>
-                <p>First St. NYC</p>
+                <p>Gopeshwar,Uttarakhand</p>
               </div>
             </li>
           </div>
         </div>
       </div>
       <div className="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2024 Oakwood Resort. All rights reserved.
       </div>
     </footer>
   )

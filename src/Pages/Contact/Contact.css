@@ -95,10 +95,11 @@ section.left .contactInfo{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.iconGroup .details span{
+.iconGroup .details a{
+	margin-top: 5px;
 	display: block;
 	color: #888;
-	font-size: 18px;
+	font-size: 14px;
 }
 .iconGroup .details span:nth-child(1){
 	text-transform: uppercase;
@@ -127,7 +128,7 @@ svg{
 }
 .socialMedia a i{
 	color: #ddd;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 35px;
 	border: 1px solid transparent;
 	transition-delay: 0.4s;
