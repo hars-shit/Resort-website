@@ -28,9 +28,9 @@ const Contact = () => {
     // template_9ov3i7a
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const serviceId = 'service_fsjelbl';
-        const templateId='template_9ov3i7a';
-        const publicKey='ZrX4X_IoPovPpwQo7';
+        const serviceId = 'service_qr6089r';
+        const templateId='template_i194u8b';
+        const publicKey='ut4ca-rSCi1fGujS4';
 
         const tempObj={
             from_name:data.name,

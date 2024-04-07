@@ -49,6 +49,7 @@
   color: var(--white);
   background-color: var(--secondary-color);
   outline: none;
+  text-align: center;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -735,7 +736,7 @@ nav {
 
   .booking__container form {
     max-width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 
