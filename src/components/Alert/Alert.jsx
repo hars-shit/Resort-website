@@ -1,64 +1,46 @@
 import * as React from 'react';
-import Button from '@mui/joy/Button';
-import Snackbar from '@mui/joy/Snackbar';
-import { keyframes } from '@mui/system';
-
-const inAnimation = keyframes`
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
-
-const outAnimation = keyframes`
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-`;
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function Alert({open,setOpen}) {
 
-  const animationDuration = 600;
 
 
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
 
-  const handleClose = () => {
     setOpen(false);
   };
 
+  const action = (
+    <React.Fragment>
+      <Button color="secondary" size="small" onClick={handleClose}>
+        UNDO
+      </Button>
+      <IconButton
+        size="small"
+        aria-label="close"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" sx={{color:'#f6ac0f'}}/>
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
-    <div>
-   <Snackbar
-  anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+    <div style={{background:'#0f1a2c'}}>
+     <Snackbar 
   open={open}
+  autoHideDuration={6000}
   onClose={handleClose}
-  autoHideDuration={4000}
-  animationDuration={animationDuration}
-  sx={{
-    top: { xs: '16px', sm: '24px' }, // Adjusts the top spacing for small screens and up
-    ...(open && {
-      animation: `${inAnimation} ${animationDuration}ms forwards`,
-    }),
-    ...(!open && {
-      animation: `${outAnimation} ${animationDuration}ms forwards`,
-    }),
-    // Ensure the snackbar is centered horizontally in the page
-    '& .MuiSnackbarContent-root': {
-      flexGrow: 0, // Prevents the snackbar from stretching full width
-    },
-  }}
->
-  I love this animation!
-</Snackbar>
+  message="Message Send Successfully !"
+  action={action}
+  sx={{ '& .MuiPaper-root': { backgroundColor: '#0f1a2c' } }} 
+/>
 
     </div>
   );

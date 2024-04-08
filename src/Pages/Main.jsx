@@ -2,7 +2,7 @@ import { useState } from "react"
 import Date from "../components/Date/Date"
 import dayjs from "dayjs"
 import emailjs from '@emailjs/browser'
-import Loader from "../components/Loader/Loader"
+import Loader from "../components/Loader/Loader" 
 import Alert from "../components/Alert/Alert"
 import { FaArrowCircleRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"
@@ -13,26 +13,25 @@ const Main = () => {
 
  const [loading,setLoading]=useState(false) 
   const [open,setOpen]=useState(false)
-  const [guests,setGuests]=useState(0)
+  const [guests,setGuests]=useState()
   const [arrival,setArrival]=useState(dayjs('2024-04-02'))
   const [departure,setDeparture]=useState(dayjs('2024-04-04'))
   const [number,setNumber]=useState()
 
-  // console.log("arrival",arrival.format('DD/MM/YYYY'))
-  // console.log("departure",departure.format('DD/MM/YYYY'))
-
 
   const handleClick=(e)=>{
     e.preventDefault()
-    setLoading(true);
-    setOpen(true)
-    console.log("sa",arrival.format('DD/MM/YYYY'),departure.format('DD/MM/YYYY'),number,guests)
-    const serviceId = 'service_5cm6de2';
-    const templateId='template_dsv2i0i';
-    const publicKey='ut4ca-rSCi1fGujS4';
-   
-    const obj = {
-      from_number: number,
+    // console.log("sa",arrival.format('DD/MM/YYYY'),departure.format('DD/MM/YYYY'),number,guests) 
+    if(number && arrival && departure && guests){
+      setLoading(true);
+      setOpen(true)
+
+      const serviceId = 'service_5cm6de2';
+      const templateId='template_dsv2i0i';
+      const publicKey='ut4ca-rSCi1fGujS4';
+      
+      const obj = {
+        from_number: number,
       from_arrival: arrival.format('YYYY-MM-DD'), // Format the arrival date
       from_departure: departure.format('YYYY-MM-DD'), // Format the departure date
       from_guests: guests,
@@ -44,6 +43,10 @@ const Main = () => {
     .catch((error)=>{
       console.error("Error sending Failed",error)
     })
+  }
+  else {
+    console.log("Please insert all fields")
+  }
 
   }
   return (
@@ -63,7 +66,7 @@ const Main = () => {
         <form >
           <div className="input__group">
             <label htmlFor="arrival">Arrival Date</label>
-            <Date value={arrival} setValue={setArrival}/>
+            <Date value={arrival} setValue={setArrival} placeholder={"2024-04-02"}/>
           </div>
           <div className="input__group">
             <label htmlFor="departure">Departure Date</label>
@@ -75,7 +78,7 @@ const Main = () => {
           </div>
           <div className="input__group">
             <label htmlFor="guests">Guests</label>
-            <input type="text" placeholder="No Of Guests" inputMode={"numeric"} value={guests} onChange={(e)=>setGuests(e.target.value)}/>
+            <input type="text" placeholder="Number Of Guests" inputMode={"numeric"} value={guests} onChange={(e)=>setGuests(e.target.value)}/>
           </div>
   
           <button className="btn border" onClick={handleClick}>Check Availability

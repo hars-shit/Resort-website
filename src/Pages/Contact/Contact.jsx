@@ -5,6 +5,7 @@ import { IoMail } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser'
+import Alert from '../../components/Alert/Alert';
 const Contact = () => {
     
     
@@ -14,6 +15,7 @@ const Contact = () => {
         number:"",
         text:""
     })
+    const [open,setOpen]=useState(false)
     
     
     const handleChange=(e)=>{
@@ -28,27 +30,30 @@ const Contact = () => {
     // template_9ov3i7a
     const handleSubmit=(e)=>{
         e.preventDefault();
-        const serviceId = 'service_qr6089r';
-        const templateId='template_i194u8b';
-        const publicKey='ut4ca-rSCi1fGujS4';
+        if(data.name && data.email && data.number && data.text){
+            setOpen(true)
+            const serviceId = 'service_qr6089r';
+            const templateId='template_i194u8b';
+            const publicKey='ut4ca-rSCi1fGujS4';
 
-        const tempObj={
-            from_name:data.name,
-            from_email:data.email,
-            from_number:data.number,
-            message:data.text
-
-        }
+            const tempObj={
+                from_name:data.name,
+                from_email:data.email,
+                from_number:data.number,
+                message:data.text
+                
+            }
     emailjs.send(serviceId,templateId,tempObj,publicKey)
     .then((response)=>{
         console.log("email sent Successfully",response);
-        setData('')
     })
     .catch((error)=>{
         console.error("Error sending failed",error)
     })
-        
-        console.log(data)
+}   
+       else{
+        console.log("Please Enter All inputs")
+       }
     }
 
     const location = useLocation()
@@ -56,6 +61,8 @@ const Contact = () => {
         console.log("as",location.pathname)
     },[location.pathname])
   return (
+    <>
+    {open && <Alert open={open} setOpen={setOpen}/>}
     <div className="container">
         {
             location.pathname=='/contact' &&
@@ -97,7 +104,7 @@ const Contact = () => {
                     </div>
                     <div className="details">
                         <span>Email</span>
-                        <a style={{fontSize:'14px'}} href="mailto:up@gmail.com"><span>up@gmail.com</span></a>
+                        <a style={{fontSize:'14px'}} href="mailto:oakwoodresortchamoli@gmail.com"><span>oakwoodresortchamoli@gmail.com</span></a>
                     </div>
                 </div>
 
@@ -154,6 +161,7 @@ const Contact = () => {
 
     </main>
 </div>
+    </>
   )
 }
 

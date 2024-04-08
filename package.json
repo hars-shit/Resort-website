@@ -13,16 +13,19 @@
     "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
     "@mui/joy": "^5.0.0-beta.32",
-    "@mui/material": "^5.15.14",
+    "@mui/material": "^5.15.15",
     "@mui/x-date-pickers": "^7.1.0",
     "axios": "^1.6.8",
     "dayjs": "^1.11.10",
     "emailjs": "^4.0.3",
+    "notistack": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

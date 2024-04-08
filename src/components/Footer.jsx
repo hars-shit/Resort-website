@@ -55,7 +55,7 @@ const Footer = () => {
               <IoMail className="fas"/>
               <div>
                 <h5>Email</h5>
-                <p>up@gmail.com</p>
+                <p>oakwoodresortchamoli@gmail.com</p>
               </div>
             </li>
             <li>

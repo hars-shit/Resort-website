@@ -39,7 +39,7 @@ const About = () => {
         <div className="about__content">
           <p className="section__subheader">ABOUT US</p>
           <h2 className="section__header">Immerse yourself at Oak Wood Resort</h2>
-          <p className="section__description">
+          <p className="section__description" style={{textAlign:'justify'}}>
             Oak Wood Resort is a perfect destination for visitors who are
             interested in exploring Uttarakhand Garhwal region. The resort is
             situated in the Mandal village, which is 14 kilometers away from
