@@ -87,7 +87,7 @@ const Contact = () => {
                     </div>
                     <div className="details">
                         <span>Phone</span>
-                        <a style={{fontSize:'14px'}} href="tel:+919520593613"><span>+91 9520593613</span></a>
+                        <a style={{fontSize:'14px'}} href="tel:+91 8755329574"><span>+91 8755329574</span></a>
                     </div>
                 </div>
 
@@ -97,7 +97,7 @@ const Contact = () => {
                     </div>
                     <div className="details">
                         <span>Email</span>
-                        <a style={{fontSize:'14px'}} href="mailto:up@gmail.com"><span>up@gmail.com</span></a>
+                        <a style={{fontSize:'14px'}} href="mailto:oakwoodresortchamoli@gmail.com"><span>oakwoodresortchamoli@gmail.com</span></a>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@ const Contact = () => {
                     </div>
                     <div className="details">
                         <span >Location</span>
-                        <a style={{fontSize:'14px'}} href="https://www.google.com/maps/place/Gopeshwar,+Uttarakhand" target="_blank" rel="noopener noreferrer"><span>Gopeshwar,Uttarakhand</span></a>
+                        <a style={{fontSize:'14px'}} href="https://www.google.com/maps/place/Oakwood+Resort/@30.4624473,79.2689027,19z/data=!4m12!1m5!3m4!2zMzDCsDI3JzQ1LjIiTiA3OcKwMTYnMDguMCJF!8m2!3d30.4625559!4d79.2688924!3m5!1s0x39082d0073b77981:0x5ad133a4cb08069!8m2!3d30.4621476!4d79.2691613!16s%2Fg%2F11vwvbmddf?hl=en-US&entry=ttu" target="_blank" rel="noopener noreferrer"><span>Mandal , Chopta road, Gopeshwar, Uttarakhand</span></a>
                     </div>
                 </div>
 

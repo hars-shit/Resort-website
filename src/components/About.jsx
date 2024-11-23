@@ -1,6 +1,7 @@
 import "./style.css";
 import { CiUser } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
+import { FaTents } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import a from '../img/a.jpg'
 import b from '../img/camp.jpg'
@@ -31,7 +32,7 @@ const About = () => {
             <span>
               <i className="ri-calendar-check-line"></i>
             </span>
-            <SlCalender className="CiUser sl" />
+            <FaTents className="CiUser sl" />
             <h4>Dome Tent</h4>
             <p>Nestled among oak trees and vibrant wildlife</p>
           </div>

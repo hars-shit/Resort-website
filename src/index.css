@@ -338,7 +338,7 @@ nav {
   justify-content: space-between;
   gap: 1rem;
   background-color: var(--white);
-  transform: translateY(-50%);
+  transform: translateY(20%);
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -707,7 +707,7 @@ nav {
   .nav__bar {
     max-width: var(--max-width);
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
