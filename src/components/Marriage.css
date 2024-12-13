@@ -61,7 +61,8 @@
   
   .video-container video {
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    height: 600px;
     border: none;
   }
   
