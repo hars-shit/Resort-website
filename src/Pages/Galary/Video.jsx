@@ -1,7 +1,9 @@
-const Video = ({ setOpen, setSrc, src }) => {
+import vd from '../../img/marrige.mp4';
+
+const Video = ({ setOpen }) => {
     return (
-      <div className="video" onClick={() => { setOpen(true); setSrc(src); }}>
-        <video src={src} muted />
+      <div className="video" onClick={() => { setOpen(true);  }}>
+        <video src={vd} muted />
       </div>
     );
   };

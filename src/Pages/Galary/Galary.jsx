@@ -1,8 +1,12 @@
 import './Galary.css'
-import a from '../../img/a.jpg'
-import b from '../../img/camp.jpg'
-import c from '../../img/f2.jpg'
-import d from '../../img/f4.jpg'
+import a from '../../img/g1.jpg'
+import b from '../../img/g2.jpg'
+import c from '../../img/g3.jpg'
+import d from '../../img/g8.jpg'
+import e from '../../img/g4.jpg'
+import f from '../../img/g5.jpeg'
+import g from '../../img/g6.jpg'
+import h from '../../img/g7.jpg'
 import { useState } from 'react'
 import VideoGallery from './VideoGalary'
 import { Link } from 'react-router-dom'
@@ -66,35 +70,47 @@ const Galary = () => {
 			</div>
 
 			<div className="item design">
-				<img src={a}/>
+				<img src={b}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
-				<img src={a}/>
+				<img src={c}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
-				<img src={a} />
+				<img src={d} />
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
 			<div className="item development">
-				<img src={a} />
+				<img src={e} />
 				<div className="overlay">
 					<a href="#">VIEW MORE</a>
 				</div>
 			</div>
 		
 			<div className="item logo">
-				<img src={a} />
+				<img src={f} />
+				<div className="overlay">
+					<a href="#">VIEW MORE</a>
+				</div>
+			</div>
+			<div className="item logo">
+				<img src={g} />
+				<div className="overlay">
+					<a href="#">VIEW MORE</a>
+				</div>
+			</div>
+			<div className="item logo">
+				<img src={h} />
 				<div className="overlay">
 					<a href="#">VIEW MORE</a>
 				</div>
@@ -117,39 +133,20 @@ const Galary = () => {
 			</div>
 
 			<div className="item design">
-				<img src={b}/>
+				<img src={g}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item development">
-				<img src={b}/>
+				<img src={h}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 		
-			<div className="item development">
-				<img src={b} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item development">
-				<img src={b} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item logo">
-				<img src={b} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
+			
 	
 
 		</div>
@@ -162,46 +159,20 @@ const Galary = () => {
 		<div className="gallery">
 		
 			<div className="item design">
-				<img src={c} />
+				<img src={e} />
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
-				<img src={c}/>
+				<img src={f}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
-			<div className="item development">
-				<img src={c}/>
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item development">
-				<img src={c} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item development">
-				<img src={c} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item logo">
-				<img src={c} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
+			
 	
 
 		</div>
@@ -214,14 +185,14 @@ const Galary = () => {
 		<div className="gallery">
 		
 			<div className="item design">
-				<img src={d} />
+				<img src={a} />
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
 			</div>
 
 			<div className="item design">
-				<img src={d}/>
+				<img src={c}/>
 				<div className="overlay">
 				<Link to="/contact">Contact Us</Link>
 				</div>
@@ -234,26 +205,6 @@ const Galary = () => {
 				</div>
 			</div>
 		
-			<div className="item development">
-				<img src={d} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item development">
-				<img src={d} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
-		
-			<div className="item logo">
-				<img src={d} />
-				<div className="overlay">
-				<Link to="/contact">Contact Us</Link>
-				</div>
-			</div>
 	
 
 		</div>

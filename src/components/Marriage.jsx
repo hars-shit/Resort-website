@@ -1,6 +1,6 @@
 import React from 'react'
 import './Marriage.css'
-import video from '../img/w.mp4'
+import video from '../img/marrige.mp4'
 import { useNavigate } from 'react-router-dom'
 const Marriage = () => {
     const navigate=useNavigate()

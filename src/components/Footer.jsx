@@ -18,7 +18,7 @@ const Footer = () => {
 
           <div className="frame">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3154747797067!2d79.26693507691508!3d30.46221707937748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a02c87df8e8727%3A0xb0dcf9c8dbe3a4aa!2sGopeshwar%2C%20Uttarakhand%2C%20India!5e0!3m2!1sen!2sus!4v1698569826048!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6878.156828460786!2d79.269124!3d30.462217000000003!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1733629507044!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: "0" }}
