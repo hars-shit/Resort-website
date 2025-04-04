@@ -23,7 +23,7 @@ const Header = () => {
           <ul className="nav__links" id="nav-links">
             <li><Link to="/">Home</Link></li>
 
-            <li><Link to="/galary">Galary</Link></li>
+            <li><Link to="/galary">Gallery</Link></li>
 
             <li><Link to="/contact">Contact</Link></li>
 

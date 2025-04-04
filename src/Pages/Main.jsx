@@ -54,7 +54,7 @@ const Main = () => {
       <div className="section__container header__container">
         {/* <p className="section__subheader">The</p> */}
         <h1>Escape to <br />Uttarakhand's Charm</h1>
-        <button className="btn" onClick={()=>navigate('/galary')}>Visit Galary</button>
+        <button className="btn" onClick={()=>navigate('/galary')}>Visit Gallery</button>
       </div>
     </header>
 

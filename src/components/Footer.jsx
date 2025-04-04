@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="footer__links" >
             <li style={{ marginBottom: '1.25rem' }}><Link to="/">Home</Link></li>
            
-            <li style={{ marginBottom: '1.25rem' }}><Link to="/galary">Galary</Link></li>
+            <li style={{ marginBottom: '1.25rem' }}><Link to="/galary">Gallery</Link></li>
            
             <li style={{ marginBottom: '1.25rem' }}><Link to="/contact">Contact</Link></li>
            
