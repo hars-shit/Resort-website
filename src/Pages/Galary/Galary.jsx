@@ -212,7 +212,7 @@ const Galary = () => {
 
 
 	</main>
-	<VideoGallery />
+	{/* <VideoGallery /> */}
 
 </section>
   )
