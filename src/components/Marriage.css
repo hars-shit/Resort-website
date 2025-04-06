@@ -35,7 +35,7 @@
   
   .video-container {
     position: relative;
-    max-width: 700px;
+    max-width:fit-content;
     margin-bottom: 40px;
     border-radius: 12px;
     overflow: hidden;
